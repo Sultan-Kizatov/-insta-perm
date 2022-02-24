@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ТЗ</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="hamburger ">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="menu">
+            <a href="#" class="logo">Company</a>
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="#products" class="menu__link">Products</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Prices</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Security</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link menu__link_after menu__link-open">Resources</a>
+                    <ul class="menu__resources-list">
+                        <li class="menu__resources-item">
+                            <a href="#">About</a>
+                            <div class="menu__resources-descr">
+                                We aim to continuously refine our
+                                <br>
+                                services in highly dynamic industry.
+                            </div>
+                        </li>
+                        <li class="menu__resources-item">
+                            <a href="#">Careers</a>
+                            <div class="menu__resources-descr">
+                                Come join our team and help us build
+                                <br>
+                                the future.
+                            </div>
+                        </li>
+                        <li class="menu__resources-item">
+                            <a href="#">Support</a>
+                            <div class="menu__resources-descr">
+                                Answers to FAQs and how to contact
+                                <br>
+                                our customer service team.
+                            </div>
+                        </li>
+                        <li class="menu__resources-item">
+                            <a href="#">Blog</a>
+                            <div class="menu__resources-descr">
+                                Aroduct announcements, company
+                                <br>
+                                updates, and industry perspectives.
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="menu__wrap">
+                <a href="#" class="log-in">Log in</a>
+                <select class="language">
+                    <option>English</option>
+                    <option>Русский</option>
+                    <option>Қазақша</option>
+                    <option>Español</option>
+                    <option>Български</option>
+                    <option>Українська</option>
+                </select>
+                <button class="search">
+                    <img src="icons/search.svg" alt="search">
+                </button>
+                <input type="search" placeholder="Search" class="search__input">
+            </div>
+        </nav>
+        <div class="promo">
+            <h1 class="promo__title">
+                One app, all
+                <br>
+                things money
+            </h1>
+            <div class="promo__descr">
+                Open a free account in minutes right from your phone,
+                <br>
+                and make your money go further
+            </div>
+            <a href="#" class="btn modal-open">Get started</a>
+        </div>
+    </header>
+
+    <section class="products" id="products">
+        <h2 class="subtitle">PRODUCT SPECS</h2>
+        <div class="swiper products__swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide products__item">
+                    <img src="img/products/product-1.png" alt="1">
+                </div>
+                <div class="swiper-slide products__item">
+                    <img src="img/products/product-2.png" alt="2">
+                </div>
+                <div class="swiper-slide products__item">
+                    <img src="img/products/product-3.png" alt="3">
+                </div>
+                <div class="swiper-slide products__item">
+                    <img src="img/products/product-4.png" alt="4">
+                </div>
+                <div class="swiper-slide products__item">
+                    <img src="img/products/product-5.png" alt="5">
+                </div>
+                <div class="swiper-slide products__item">
+                    <img src="img/products/product-6.png" alt="6">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+
+            <img src="icons/products/products-next.svg" alt="next" class="swiper-button-next">
+            <img src="icons/products/products-prev.svg" alt="prev" class="swiper-button-prev">
+        </div>
+    </section>
+
+    <!-- Modal window -->
+    <div class="modal">
+        <form class="modal__form" method="post" netlify>
+            <div class="modal-close">&times;</div>
+            <a href="#" class="logo">Company</a>
+            <div class="modal__title">Registration form</div>
+            <input class="modal__name" name="name" required placeholder="Name" type="text">
+            <select class="modal__country" required name="country">
+                <option>Country</option>
+                <option>Россия</option>
+                <option>Англия</option>
+                <option>Казахстан</option>
+                <option>Украина</option>
+                <option>Белоруссия</option>
+                <option>Польша</option>
+            </select>
+            <input class="modal__email" name="email" required placeholder="Email" type="email">
+            <input class="modal__phone" name="phone" required placeholder="Phone" type="tel">
+            <button class="btn modal_btn" type="submit">Registration</button>
+        </form>
+    </div>
+    
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

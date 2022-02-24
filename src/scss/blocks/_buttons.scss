@@ -1,0 +1,24 @@
+.btn {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding: 44px 114px 44px 59px;
+    margin-top: 272px;
+    background: $blue-color;
+    border-radius: 62px;
+    color: #ffffff;
+    font-family: 'Libre Franklin';
+    font-size: 30px;
+    font-weight: 400;
+    left: 52%;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 51%;
+        right: 69px;
+        transform: translateY(-50%);
+        background: url('../../icons/btn-after.svg') center center/cover no-repeat;
+        width: 30px;
+        height: 35px;
+    }
+}
